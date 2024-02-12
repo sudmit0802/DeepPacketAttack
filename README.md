@@ -78,6 +78,9 @@ python eval_cnn.py --ct app --gpu True
 python eval_cnn.py --ct traffic --gpu True
 ```
 ---------------------------------------------------------
+Check my another project with traffic protection via obfuscation:
+Put obfuscated pcap files in /obfuscated_pcaps directory and run:
+ 
 # OBFUSCATED DATASET PIPELINE
 ```bash
 python preprocessing.py -s obfuscated_pcaps -t obfuscated_processed_data
