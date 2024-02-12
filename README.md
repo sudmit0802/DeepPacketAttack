@@ -1,5 +1,16 @@
 It's DeepPacketAttack project for classification over encrypted traffic 
 
+Installation and preparation:
+
+# python -m pip uninstall torch
+# python -m pip cache purge
+# python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+# python
+#  >>> import torch
+#  >>> torch.cuda.is_available()
+# pip install click jupyterlab matplotlib datasets pandas plotly pyspark pytorch-lightning scapy[complete]==2.5.0rc1 scikit-learn seaborn tensorboard
+
+
 # CLEAR DATASET PIPELINE
 1. python preprocessing.py -s clear_pcaps -t clear_processed_data
 2. python create_train_test_set.py -s clear_processed_data -t train_test_data
