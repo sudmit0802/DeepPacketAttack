@@ -1,0 +1,16 @@
+name: deep_packet
+
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip=22.1.2
+
+
+#python -m pip uninstall torch
+#python -m pip cache purge
+#python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+#python
+# >>> import torch
+# >>> torch.cuda.is_available()
+# pip install click jupyterlab matplotlib datasets pandas plotly pyspark pytorch-lightning scapy[complete]==2.5.0rc1 scikit-learn seaborn tensorboard
