@@ -1,6 +1,6 @@
-#It's DeepPacketAttack project for classification over encrypted traffic. 
+# It's DeepPacketAttack project for classification over encrypted traffic. 
 
-#Installation and preparation:
+# Installation and preparation:
 
 1. Download and install cuda 11.7 if you want to use GPU:
 https://developer.nvidia.com/cuda-11-7-0-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exe_local
@@ -48,7 +48,7 @@ exit()
 pip install click jupyterlab matplotlib datasets pandas plotly pyspark pytorch-lightning scapy[complete]==2.5.0rc1 scikit-learn seaborn tensorboard
 ```
 
-#Unexpected dependencies:
+# Unexpected dependencies:
 
 Check guide https://kontext.tech/article/377/latest-hadoop-321-installation-on-windows-10-step-by-step-guide (not everything needed, but something is necessary)
 
