@@ -6,8 +6,8 @@ Installation and preparation:
 >> python -m pip cache purge
 >> python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 >> python
-   >>> import torch
-   >>> torch.cuda.is_available()
+>> import torch
+>> torch.cuda.is_available()
 >> pip install click jupyterlab matplotlib datasets pandas plotly pyspark pytorch-lightning scapy[complete]==2.5.0rc1 scikit-learn seaborn tensorboard
 
 
