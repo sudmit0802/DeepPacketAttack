@@ -1,2 +1,5 @@
 /**/*.pcap
 /**/*.parquet
+/**/*.json.gz
+/**/*SUCCESS
+/**/__pycache__
