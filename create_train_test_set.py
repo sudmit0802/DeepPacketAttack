@@ -34,7 +34,7 @@ def split_train_test(df, test_size, under_sampling_train=True):
     fractions = (
         df.select("label")
         .distinct()
-        .withColumn("fraction", lit(test_size))
+        .withColumn("fraction", lit(1-test_size))
         .rdd.collectAsMap()
     )
     test_id = (
@@ -118,7 +118,9 @@ def print_df_label_distribution(spark, path):
 def main(source, target, test_size, under_sampling):
     source_data_dir_path = Path(source)
     target_data_dir_path = Path(target)
-
+    if test_size>1 or test_size<0:
+        print("Bad test size argument")
+        exit(1)
     # prepare dir for dataset
     application_data_dir_path = target_data_dir_path / "application_classification"
     traffic_data_dir_path = target_data_dir_path / "traffic_classification"
